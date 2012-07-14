@@ -4,7 +4,7 @@ require 'sinatra'
 
 enable :sessions
 
-# need install dm-sqlite-adapter
+# DataMapper.setup(:default, "sqlite://#{Dir.pwd}/surveys.db")
 DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
 class Response
@@ -40,6 +40,8 @@ end
 # Call this when you've defined all your models
 DataMapper.finalize
 
+DataMapper.auto_migrate!
+
 get '/' do
 	erb :index
 end
@@ -60,9 +62,6 @@ post '/sent' do
 	response.gender = params[:survey_gender]
 	response.postcode = params[:survey_postcode]
 	response.times = params[:survey_times]
-	response.education = params[:survey_education].join(', ') if params[:survey_education]
-	response.media = params[:survey_media].join(', ') if params[:survey_media]
-	response.attractions = params[:survey_attractions].join(', ') if params[:survey_attractions]
 	response.overall = params[:survey_overall]
 	response.tickets = params[:survey_tickets]
 	response.lineride = params[:survey_lineride]
@@ -80,7 +79,11 @@ post '/sent' do
 	response.email = params[:survey_newsletter]
 	response.session = session[:surveyed]
 
-	response.save!
+	response.education = params[:survey_education].join(', ') if params[:survey_education]
+	response.media = params[:survey_media].join(', ') if params[:survey_media]
+	response.attractions = params[:survey_attractions].join(', ') if params[:survey_attractions]
+	
+	response.save
 
 	erb :sent
 end
