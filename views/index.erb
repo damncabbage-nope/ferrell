@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head profile="http://gmpg.org/xfn/11"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<title>SMASH! - 2012 Attendee Feedback</title>
+ 
+<link rel="stylesheet" href="/css/pink.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/bubbles.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="/js/jquery-1.4.2.js"></script> 
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/surveys.js"></script>
+
+</head>
+<body> 
+
+<div id="wrapper"> 
+	<div id="header">
+		<div id="masthead">
+			<a href="http://www.smash.org.au/"><img src="/images/logo.png" alt="SMASH!" title="SMASH!" border="0" id="logo" /></a>
+			<img src="/images/giveittousstraight.png" alt="Give it to us straight." title="Give it to us straight." border="0" id="tagline" />
+		</div>
+	</div>
+	<div class="clear"></div> 
+	<div id="container"> 
+		<div id="steps">
+			<img src="/images/whatdidyouthink.png" alt="What did you think of SMASH!?" title="What did you think of SMASH!?" border="0" />
+		</div>
+		<div class="clear"></div> 
+		<div id="jobs">
+			<div id="faq" class="column">
+				<h3>Welcome to the Survey</h3>
+				
+				<p>Hello there and thanks for coming to fill out the SMASH! 2012 survey!</p>
+				
+				<p>Every year we try to improve on the year before and make it a more enjoyable event for our attendees. The best way we know how to do that is to find out what you think.</p>
+
+				<p>The survey is anonymous (although you can tell us your email if you'd like) and we only use the information in aggregate. It shouldn't take more than about 5 minutes to complete and we really appreciate the effort.</p>
+
+				<p>See you next year!</p>
+
+			</div>
+		<div id="description" class="two_column">
+			<div id="div_survey_form" class="description">
+				<form id="survey_2012_form" enctype="multipart/form-data" action="/sent" method="post">
+					
+					<div id="div_survey_age" class="box">
+					<h4>Age Group</h4>
+						<p><label for="survey_age">What age group are you in?</label></p>
+						<select class="chunkyish " name="survey_age" id="survey_age">
+							<option value="under_12">Under 12</option>
+							<option value="12-18">12-18</option>
+							<option value="19-25" selected="selected">19-25</option>
+							<option value="26-39">26-39</option>
+							<option value="40-55">40-55</option>
+							<option value="over_55">Over 55</option>
+						</select>
+					</div>
+					
+					<div id="div_survey_gender" class="box">
+					<h4>Gender</h4>
+						<p><label for="survey_gender">What gender do you best identify with?</label></p>
+						<select class="chunkyish " name="survey_gender" id="survey_gender">
+							<option value="male">Male</option>
+							<option value="female" selected="selected">Female</option>
+							<option value="other">Rather not say</option>
+						</select>
+					</div>
+					
+					<div id="div_survey_postcode">
+						<h4>Post Code</h4>
+						<p><label for="survey_postcode">The post code for the city or suburb in which you predominantly live.</label></p>
+						<input class="chunkyish required " type="text" name="survey_postcode" id="survey_postcode" value="" />
+					</div>
+
+					<div id="div_survey_times">
+					<h4>Times Attended</h4>
+						<p><label for="survey_times">How many times have you attended SMASH!?</label></p>
+						<select class="chunkyish " name="survey_times" id="survey_times">
+							<option value="0" selected="selected">This was my first year</option>
+							<option value="1">One time</option>
+							<option value="2">Two times</option>
+							<option value="3">Three or more</option>
+							<option value="hardcore">Every one since 2007, baby!</option>
+						</select>
+					</div>
+
+					<div id="div_survey_education">
+					<h4>Education/Employment</h4>
+						<p><label for="survey_education">What do you do? This is <strong>optional</strong>.</label></p>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_education[]" id="survey_education_school" value="school" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_education_school">School</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_education[]" id="survey_education_university" value="university" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_education_university">University</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_education[]" id="survey_education_tafe" value="tafe_other" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_education_tafe">TAFE/Other Institution</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_education[]" id="survey_education_work" value="work" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_education_work">Full Time Employment</label></h5>
+							</div>
+						</div>
+					</div>
+					
+					<div id="div_survey_media">
+					<h4>Finding Out</h4>
+						<p><label for="survey_media">How did you hear about us this year? You can select more than one option.</label></p>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_newsletter" value="newsletter" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_newsletter">SMASH! Newsletter</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_deviant" value="deviantart" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_deviant">deviantArt</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_facebook" value="facebook" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_facebook">Facebook</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_tumblr" value="tumblr" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_tumblr">Tumblr</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_twitter" value="twitter" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_twitter">Twitter</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_flyer" value="flyer" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_flyer">Flyers</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_poster_shop" value="poster_shop" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_poster_shop">Poster (Shop)</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_poster_edu" value="poster_edu" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_poster_edu">Poster (School/University)</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_supanova" value="supanova" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_supanova">Supanova</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_friends" value="friends" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_friends">Word-of-Mouth</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_telegraph" value="telegraph" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_telegraph">Daily Telegraph</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_project" value="project" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_project">The Project</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_sbs" value="sbs" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_sbs">SBS Radio</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_media[]" id="survey_media_smh" value="smh" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_media_smh">Sydney Morning Herald</label></h5>
+							</div>
+						</div>
+					</div>
+
+					<div id="div_survey_attractions">
+					<h4>Attractions</h4>
+						<p><label for="survey_attractions">What attracted you to SMASH! this year? You can select more than one option.</label></p>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_tange" value="tange" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_tange">Sakura Tange</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_miki" value="miki" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_miki">Shin-Ichiro Miki</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_miyamura" value="miyamura" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_miyamura">Yuko Miyamura</label></h5>
+							</div>			
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_gbwc" value="gbwc" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_gbwc">Gunplay Builders World Cup</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_art" value="art" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_art">Art Events</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_circle" value="circle" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_circle">Artists Circle</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_amvs" value="amvs" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_amvs">AMV Competition</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_bjds" value="bjds" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_bjds">BJD Events</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_cosplay" value="cosplay" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_cosplay">Cosplay Events</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_vendors" value="vendors" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_vendors">Exhibitors/Vendors</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions_gaming" id="survey_attractions_gaming" value="gaming" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_gaming">Gaming Events</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_karaoke" value="karaoke" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_karaoke">Karaoke</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_maidcafe" value="maidcafe" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_maidcafe">Maid Cafe</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_panels" value="panels" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_panels">Panels/Workshops</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_screenings" value="screenings" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_screenings">Screenings</label></h5>
+							</div>
+						</div>
+						<div class="box">
+							<div class="left checkbox">
+								<input type="checkbox" name="survey_attractions[]" id="survey_attractions_friends" value="friends" />
+							</div>
+							<div class="left item">
+								<h5><label for="survey_attractions_friends">See Friends</label></h5>
+							</div>
+						</div>
+					</div>
+
+					<div id="div_survey_experience">
+					<h4>Convention Experience</h4>
+						<p><label for="survey_experience">Let us know how we we did.</label></p>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th></th>
+									<th class="rating">Awesome</th>
+									<th class="rating">Good</th>
+									<th class="rating">Meh</th>
+									<th class="rating last">Sucked</th>
+								</tr>
+							</thead>
+							<tr>
+								<td>
+									<h5>Overall</h5>
+									<p>How would you rate the convention overall?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_overall" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_overall" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_overall" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_overall" value="sucked" /></td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Tickets</h5>
+									<p>What was it like to buy tickets?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_tickets" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_tickets" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_tickets" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_tickets" value="sucked" /></td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Line Ride</h5>
+									<p>How did you find lining up to get in?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_lineride" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_lineride" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_lineride" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_lineride" value="sucked" /></td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Guests</h5>
+									<p>What did you think of this year's guests?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_guests" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_guests" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_guests" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_guests" value="sucked" /></td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Facilities</h5>
+									<p>How was the venue?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_facilities" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_facilities" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_facilities" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_facilities" value="sucked" /></td>
+							</tr>
+							<tr>
+								<td>
+									<h5>Hosts/MCs</h5>
+									<p>What did you think of the hosts and MCs of the events?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_hosts" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_hosts" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_hosts" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_hosts" value="sucked" /></td>
+							</tr>						
+							<tr>
+								<td>
+									<h5>Staff</h5>
+									<p>Were we helpful? Polite? Good at assisting you?</p>
+								</td>
+								<td class="rating"><input type="radio" name="survey_staff" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_staff" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_staff" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_staff" value="sucked" /></td>
+							</tr>
+							<tr class="last">
+								<td>
+									<h5>Value</h5>
+									<p>Do you feel like SMASH! was good value for money?</p>
+								</td>
+								<td class="rating end"><input type="radio" name="survey_value" value="awesome" /></td>
+								<td class="rating"><input type="radio" name="survey_value" value="good" /></td>
+								<td class="rating"><input type="radio" name="survey_value" value="meh" /></td>
+								<td class="rating last"><input type="radio" name="survey_value" value="sucked" /></td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="div_survey_enjoyable">
+						<h4>Most Enjoyable Thing</h4>
+						<p><label for="survey_enjoyable_thing">What aspect of the convention did you like the most? This is <strong>optional</strong>.</label></p>
+						<input class="chunkyish " type="text" name="survey_enjoyable_thing" id="survey_enjoyable_thing" value="" />
+						<p><label for="survey_enjoyable_details">Can you explain in more detail? This is <strong>optional</strong>.</label></p>
+						<textarea class="chunkyish blurb " name="survey_enjoyable_details" id="survey_enjoyable_details"></textarea>
+					</div>
+
+					<div id="div_survey_unenjoyable">
+						<h4>Least Enjoyable Thing</h4>
+						<p><label for="survey_unenjoyable_thing">What aspect of the convention did you like the least? This is <strong>optional</strong>.</label></p>
+						<input class="chunkyish " type="text" name="survey_unenjoyable_thing" id="survey_unenjoyable_thing" value="" />
+						<p><label for="survey_unenjoyable_details">Can you explain in more detail? This is <strong>optional</strong>.</label></p>
+						<textarea class="chunkyish blurb " name="survey_unenjoyable_details" id="survey_unenjoyable_details"></textarea>
+					</div>
+
+					<div id="div_survey_future">
+						<h4>Future Years</h4>
+						<p><label for="survey_future">What would you like to see SMASH! do in future years? This is <strong>optional</strong>.</label></p>
+						<textarea class="chunkyish blurb " name="survey_future" id="survey_future"></textarea>
+					</div>
+
+					<div id="div_survey_comments">
+						<h4>Additional Comments</h4>
+						<p><label for="survey_comments">If you have any other feedback, we'd love to hear it. This is <strong>optional</strong>.</label></p>
+						<textarea class="chunkyish blurb " name="survey_comments" id="survey_comments"></textarea>
+					</div>
+
+					<div id="div_survey_newsletter">
+						<h4>Newsletter</h4>
+						<p><label for="survey_newsletter">Fill in your email if you'd like to receive occasional email updates. This is <strong>optional</strong>.</label></p>
+						<input class="chunkyish " type="email" name="survey_newsletter" id="survey_newsletter" value="" />
+					</div>
+
+					<div class="apply"><input class="submit" type="submit" value="Send &raquo;" /></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div> 
+	<div class="clear"></div> 
+	<div id="footer"> 
+		<div id="copyright">
+			<p>&copy; 2012 SMASH!</p>
+		</div>
+		<div id="meta">
+			<p><a href="http://www.smash.org.au/contact/" title="Contact Us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.smash.org.au/privacy/">Privacy</a></p>
+		</div>
+	</div>
+</div> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-8432062-1");
+pageTracker._setDomainName("surveys.smash.org.au");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body> 
+</html>

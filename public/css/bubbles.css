@@ -1,0 +1,33 @@
+/* Bubble with an isoceles triangle
+------------------------------------------ */
+
+label.error {
+	position:relative;
+}
+
+/* creates triangle */
+label.error:after {
+	content:"\00a0";
+	display:block; /* reduce the damage in FF3.0 */
+	position:absolute;
+	z-index:-1;
+	bottom:-30px; /* value = - border-top-width - border-bottom-width */
+	left:50px; /* controls horizontal position */
+	width:0;
+	height:0;
+	border-width:15px 15px; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:#d70056 transparent transparent;
+}
+
+/* Bubble with an isoceles triangle
+------------------------------------------ */
+
+/* creates triangle */
+label.error:after {
+	top:-30px; /* value = - border-top-width - border-bottom-width */
+	right:50px; /* controls horizontal position */
+	bottom:auto;
+	left:auto;
+	border-color:transparent transparent #d70056;
+}

@@ -1,0 +1,161 @@
+/*-----------------------------------------------------------------------------------------------
+  Global Styles
+-----------------------------------------------------------------------------------------------*/
+
+* { margin: 0; padding: 0; }
+
+.hide { display: none; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; font-size: 1px; height: 1px; line-height: 1px; }
+
+/*-----------------------------------------------------------------------------------------------
+  Layout / Base Page Styling
+-----------------------------------------------------------------------------------------------*/
+
+html { height: 100%; }
+
+body { background: #b81652 url("../images/gradient.png") repeat-x; font-family: "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif; font-size: 11px; height: 100%; }
+
+a { text-decoration: none; }
+a img { border: none; }
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, fieldset, address { margin: 1em 0; }
+
+li, dd { margin-left:10%; }
+
+fieldset { padding: .5em; }
+
+select option { padding:0 5px; }
+
+table { border-collapse: collapse; margin-bottom: 20px; }
+table td { padding-top: 10px; padding-right: 10px; }
+table td.last { padding-right: 0px; }
+
+/*-----------------------------------------------------------------------------------------------
+  Inputs
+-----------------------------------------------------------------------------------------------*/
+
+input.chunky { background: #f9f8e4; border-color: #eadcb1; border-radius: 7px; border-style: solid; border-width: 1px; font-family: "Lucida Sans", sans-serif; font-size: 40px; font-weight: bold; height: 50px; outline: none; margin: 0 0 30px 0; padding: 5px 10px 5px 10px; width: 500px; text-align: left; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+
+input.chunkyish, select.chunkyish { background: #f9f8e4; border-color: #eadcb1; border-radius: 7px; border-style: solid; border-width: 1px; font-family: "Lucida Sans", sans-serif; font-weight: bold; height: 30px; margin: 0 0 30px 0; outline: none; padding: 5px 10px 5px 10px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+input.chunkyish { font-size: 20px; width: 500px; }
+select.chunkyish { font-size: 14px; }
+
+input.file { font-family: "Lucida Sans", sans-serif; font-size: 12px; font-weight: bold; margin: 0 0 30px 0; width: 500px; }
+
+input.submit { background-color: #ffccc9; border-color: #ffccc9; border-radius: 8px; border-style: solid; border-width: 3px; cursor: pointer; font-family: "Lucida Sans", sans-serif; font-weight: bold; font-size: 15px; padding: 10px 8px; text-align: center;  text-align: left; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+textarea.chunkyish { background: #f9f8e4; border-color: #eadcb1; border-radius: 7px; border-style: solid; border-width: 1px; font-family: "Lucida Sans", sans-serif; font-size: 15px; font-weight: bold; height: 150px; margin: 10px 0 30px 0; outline: none; padding: 5px 10px 5px 10px; width: 500px; -moz-border-radius: 7px; -webkit-border-radius: 7px; }
+
+label.error { background: red; display:inline-block; margin-bottom: 50px;}
+
+/*-----------------------------------------------------------------------------------------------
+  ID Styling
+-----------------------------------------------------------------------------------------------*/
+
+#wrapper { clear: both; margin: 0 auto; width: 100%; }
+
+#header { background-color: #ffdade; padding: 6px 0 4px 0; width: 100%; }
+#masthead { margin: 0 auto; width: 924px; }
+#tagline { padding: 30px 0 0 20px; vertical-align: top; }
+
+#container { margin: 0 auto; max-width: 924px; width: 100%; }
+
+#faq h3 { margin-bottom: 20px; padding: 2px; }
+
+#success { padding: 70px 0 30px 0; }
+
+#steps { padding-top: 45px; text-align: center; width: 100%; }
+
+#vendor a { display: block; }
+#vendor a.normal { display: inline; }
+
+#footer { margin: 0 auto; width: 924px; }
+#copyright { float: left; margin-left: 40px; }
+#meta { float: right; margin-right: 40px; }
+
+
+/*-----------------------------------------------------------------------------------------------
+  Class Styling
+-----------------------------------------------------------------------------------------------*/
+
+label.error { background: #d70056; border-radius: 8px; color: white; font-size: 16px; display: inline-block; margin: -5px 0 20px 0; padding: 15px; text-align: center; width: 494px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+.column { float: left; padding: 45px 20px 0 20px; width: 268px; }
+.two_column { float: left; padding: 45px 20px 0 20px; width: 536px; }
+.single_column { margin: 0 auto; width: 612px; }
+
+.vendor { padding: 10px 20px 10px 20px; }
+
+.paper { border-top: solid 1px #b71f85; margin-top: 25px; padding: 25px 20px 10px 20px; }
+.paper img, .terms img { margin-bottom: -7px; }
+.terms { padding: 15px 20px 10px 20px; }
+
+.highlight { background: #b71f85; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+
+.apply { padding: 0; }
+.add, .remove { cursor: pointer; margin-top: -15px; padding: 0 0 20px 0; }
+.button { background-color: #ffccc9; border: #ffccc9 1px solid; border-radius: 8px; height: 33px; line-height: 40px; padding: 12px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+.box { border-spacing: 15px; float: left; margin: 0 10px 20px 0; padding: 5px; width: 245px; }
+.box div { padding: 3px; }
+.box div.radio { line-height: 50px; text-align: center; width: 20px; }
+.box div.select { line-height: 50px; text-align: center; width: 50px; }
+.box div.checkbox { text-align: center; width: 20px; }
+.box div.item { margin-right: 10px; }
+
+.box2 { float: left; margin: 0 0 20px 0; padding: 5px 5px 5px 5px; width: 500px; }
+.box2 div { padding: 3px; }
+.box2 div.checkbox { text-align: center; width: 20px; }
+.box2 div.item { margin-right: 50px; }
+
+.item p { margin: 0; }
+.item ul { margin-left: -20px; }
+
+.double_item { width: 180px; }
+
+table .rating { text-align: center; width: 55px; }
+
+.warning { background: #ffccc9; margin-bottom: 20px; padding: 20px; width: 480px;}
+.warning img { float: left; margin-right: 20px; margin-top: -6px; }
+
+/*-----------------------------------------------------------------------------------------------
+  Typefaces
+-----------------------------------------------------------------------------------------------*/
+
+p { font-size: 12px; margin: 0 0 1.0em 0; }
+li { font-size: 12px; }
+h2 { font-size: 24px; margin: 0 0 0.3em 0; }
+h3 { font-size: 18px; margin: 0 0 0.3em 0; }
+h4 { font-size: 18px; margin: 0; }
+h5 { font-size: 14px; margin: 0; }
+th { font-size: 12px; margin: 0; }
+
+.button { font-size: 16px; font-weight: bold; }
+
+.error p { font-size: 22px; font-weight: bold; margin: 0; }
+
+.tables div p { margin: 0; }
+
+.warning h5 { margin-bottom: 5px; }
+
+/*-----------------------------------------------------------------------------------------------
+  Colour
+-----------------------------------------------------------------------------------------------*/
+
+body, a, h2, h3, h4, input.file { color: #ffccc9; }
+input, textarea, select, .button { color: #bc1852; }
+.column p strong, .single_column p strong, .two_column p strong, .department p { color: #ffccc9; }
+.error p { color: #ae0000; }
+.warning h5 { color: #89005e; text-align: center; }
+.warning p { color: #89005e; }
+
+#faq h3 { border-bottom: #ffccc9 solid 1px; }
+#faq a, #container a { padding-bottom: 1px; border-bottom: #ffccc9 solid 1px; }
+
+table td { border-bottom: #ffccc9 solid 1px; }
+table tr.last td { border-bottom: none; }
