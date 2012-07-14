@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 gem 'pg', '0.10.0'
-gem 'dm-sqlite-adapter'
 gem 'data_mapper'
 gem 'dm-ar-finders'
 gem 'dm-postgres-adapter'
