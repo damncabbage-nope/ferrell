@@ -60,9 +60,9 @@ post '/sent' do
 	response.gender = params[:survey_gender]
 	response.postcode = params[:survey_postcode]
 	response.times = params[:survey_times]
-	response.education = params[:survey_education].join(', ')
-	response.media = params[:survey_media].join(', ')
-	response.attractions = params[:survey_attractions].join(', ')
+	response.education = params[:survey_education].join(', ') if params[:survey_education]
+	response.media = params[:survey_media].join(', ') if params[:survey_media]
+	response.attractions = params[:survey_attractions].join(', ') if params[:survey_attractions]
 	response.overall = params[:survey_overall]
 	response.tickets = params[:survey_tickets]
 	response.lineride = params[:survey_lineride]
