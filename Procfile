@@ -1,0 +1,1 @@
+web: bundle exec ruby trebek.rb -p $PORT
