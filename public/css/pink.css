@@ -18,7 +18,7 @@
 
 html { height: 100%; }
 
-body { background: #b81652 url("../images/gradient.png") repeat-x; font-family: "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif; font-size: 11px; height: 100%; }
+body { background: #b81652 url("http://allthethings.smash.org.au/surveys/images/gradient.png") repeat-x; font-family: "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif; font-size: 11px; height: 100%; }
 
 a { text-decoration: none; }
 a img { border: none; }
