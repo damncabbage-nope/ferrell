@@ -4,7 +4,6 @@ require 'sinatra'
 
 enable :sessions
 
-# DataMapper.setup(:default, "sqlite://#{Dir.pwd}/surveys.db")
 DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
 class Response
@@ -53,7 +52,7 @@ end
 post '/sent' do
 	# This is not the best way to do it since there's a small risk of the same token being generated for two different users
 	unless session[:surveyed]
-		session[:surveyed] = '1'
+		session[:surveyed] = rand(36**16).to_s(36)
 	end
 
 	response = Response.new
