@@ -39,7 +39,7 @@ end
 # Call this when you've defined all your models
 DataMapper.finalize
 
-DataMapper.auto_migrate!
+DataMapper.auto_upgrade!
 
 get '/' do
 	erb :index
